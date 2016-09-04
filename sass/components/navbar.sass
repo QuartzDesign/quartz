@@ -1,0 +1,103 @@
+.navbar[id="pageTop"]
+    height: 52px
+    position: fixed
+    position: fixed
+    top: 0
+    left: 50%
+    //    Half the element width [1267px]
+    margin-left: -633px
+    min-width: 1264px
+    z-index: 9997
+
+.expo-blur-wrapper
+    width: 100%
+    min-height: 100%
+    height: auto
+    position: absolute
+    top: 0
+    left: 0
+
+.expo-blur-background
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+    -webkit-transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)
+    transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)
+    background: rgba(255, 255, 255, 0)
+    -webkit-backdrop-filter: blur(0)
+    backdrop-filter: blur(0)
+
+    &::after
+        position: absolute
+        display: block
+        content: ""
+        top: 100%
+        width: 100%
+        height: 1px
+        background: rgba(255, 255, 255, 0.1)
+
+    &.nse-scrolled--from--top
+        -webkit-backdrop-filter: blur(20px) saturate(120%)
+        backdrop-filter: blur(20px) saturate(120%)
+        background: rgba(255, 255, 255, 0.7)
+
+.expo-content, .en-l
+    -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)
+    transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)
+
+.expo-content
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 2
+    height: 52px
+    width: 100%
+    min-width: 1264px
+
+.expo-icon
+    font-family: "Helvetica Neue", "Roboto", sans-serif
+    font-size: 24px
+    font-weight: 300
+    margin: 11px 0px 11px 15px
+    float: left
+    color: #fff
+
+
+.expo-nav-list
+    float: right
+    height: 100%
+    padding: 0 50px
+
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        display: -webkit-flex
+        display: flex
+
+.ene
+    -webkit-transition: border-bottom 0.2s ease-in-out
+    transition: border-bottom 0.2s ease-in-out
+    border-bottom: 0px solid #fff
+    height: 51px
+
+.ene.sensed
+    border-bottom: 3px solid #fff
+
+.navbar.nse-scrolled--from--top .ene.sensed
+    border-bottom: 3px solid #000
+
+.en-l
+    font-family: "Helvetica Neue", "Roboto", "News Cycle", sans-serif
+    color: #fff
+    font-weight: 300
+    text-decoration: none
+    font-size: 18px
+    padding: 18px
+    line-height: 3
+
+.navbar.nse-scrolled--from--top .expo-icon, .navbar.nse-scrolled--from--top .en-l
+    color: #000
