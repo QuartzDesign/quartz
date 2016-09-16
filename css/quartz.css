@@ -1,0 +1,238 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+.full {
+  width: 100%; }
+
+.centered {
+  margin: 0 auto; }
+
+.col-lg-8 {
+  width: 88%; }
+
+.col-lg-6 {
+  width: 74%; }
+
+.navbar[id="pageTop"] {
+  height: 52px;
+  position: fixed;
+  top: 0;
+  min-width: 1264px;
+  width: 100%;
+  z-index: 9997; }
+
+.expo-blur-wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.expo-blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  background: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0); }
+  .expo-blur-background::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 100%;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1); }
+  .expo-blur-background.nse-scrolled--from--top {
+    -webkit-backdrop-filter: blur(20px) saturate(120%);
+    backdrop-filter: blur(20px) saturate(120%);
+    background: rgba(255, 255, 255, 0.7); }
+
+.expo-content, .en-l {
+  -webkit-transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1); }
+
+.expo-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 52px;
+  width: 100%;
+  min-width: 1264px;
+  padding: 0 65px 0 90px; }
+
+.expo-icon {
+  font-family: "Helvetica Neue", "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 11px 15px;
+  float: left;
+  color: #fff; }
+
+.expo-nav-list {
+  float: right;
+  height: 100%;
+  padding: 0 50px; }
+  .expo-nav-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: flex; }
+
+.ene {
+  -webkit-transition: border-bottom 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
+  border-bottom: 0px solid #fff;
+  height: 51px; }
+
+.ene.sensed {
+  border-bottom: 3px solid #fff; }
+
+.navbar.nse-scrolled--from--top .ene.sensed {
+  border-bottom: 3px solid #000; }
+
+.en-l {
+  font-family: "Helvetica Neue", "Roboto", "News Cycle", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 18px;
+  line-height: 3; }
+
+.navbar.nse-scrolled--from--top .expo-icon, .navbar.nse-scrolled--from--top .en-l {
+  color: #000; }
+
+.expo-header, .content-container {
+  height: 100%; }
+
+.vfb-header {
+  float: left;
+  position: absolute;
+  top: 280px;
+  left: 110px; }
+  .vfb-header h1, .vfb-header h3 {
+    font-family: "Helvetica Neue", "Roboto", sans-serif;
+    font-size: 75px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0; }
+  .vfb-header h3 {
+    font-size: 30px; }
+
+.page-trans {
+  margin: 0 auto;
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  margin-left: -55px;
+  cursor: pointer; }
+
+.bar {
+  display: block;
+  width: 35px;
+  height: 3px;
+  float: left;
+  background: #fff;
+  border-radius: 2px;
+  position: relative;
+  top: 23px; }
+  .bar:nth-child(1) {
+    transform: rotate(45deg); }
+  .bar:nth-child(2) {
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 24px; }
+
+.qcs-tile {
+  height: 500px; }
+
+.blur-background {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  background: rgba(255, 255, 255, 0.7);
+  -webkit-backdrop-filter: blur(20px) saturate(120%);
+  backdrop-filter: blur(20px) saturate(120%); }
+
+.qcs-left-content-tile {
+  position: relative;
+  top: 100px;
+  height: 70%;
+  width: 550px;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  float: left; }
+  .qcs-left-content-tile h2 {
+    font-family: "Helvetica Neue", "Roboto", sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0;
+    position: relative;
+    top: 35%;
+    text-align: center; }
+
+.qcs-right-content-tile {
+  width: 890px;
+  height: 100%;
+  float: right; }
+
+.qcs-content {
+  width: 80%;
+  position: relative;
+  top: -90%;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4); }
+  .qcs-content h3 {
+    font-size: 36px;
+    font-weight: 300; }
+  .qcs-content h3, .qcs-content p {
+    font-family: "Helvetica Neue", "Roboto", sans-serif; }
+
+.qcs-button {
+  width: 120px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 2.5px;
+  transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
+  -webkit-transition: all 0.5s cubic-bezier(0.28, 0.11, 0.32, 1); }
+  .qcs-button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1); }
+  .qcs-button a {
+    font-family: "Helvetica Neue", "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 2; }
+
+/*# sourceMappingURL=quartz.css.map */
