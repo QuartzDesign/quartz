@@ -29,10 +29,13 @@
   "homepage": "https://github.com/Polygn/quartz#readme",
   "devDependencies": {
     "animate.css": "^3.5.2",
+    "connect": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
     "gulp-webserver": "^0.9.1",
+    "serve-static": "^1.11.1",
     "wowjs": "^1.1.3"
   }
 }
