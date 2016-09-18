@@ -15,14 +15,14 @@ $(document).ready(function() {
     $('.en-l').hover(function(e) {
         $(e.target).closest('li').toggleClass('sensed')
     })
-    
+
     $(window).ready(function(n) {
-            if(/index.html/.test(self.location.href)) {
+            if(/index.html/.test(self.location.href) || /g/.test(self.location.href)) {
                 $('.expo-icon').bind('click', function(e) {
 
                     if($(window).offset().top == 0){
                         $(window).stop(true, true)
-                        if(typeof console != undefined) {
+                        if(typeof console !== undefined) {
                             console.error("Page is scrolled to TOP! Clearing event queue and ending animation")
                         }
                     }
