@@ -32,6 +32,7 @@
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
     "gulp-webserver": "^0.9.1",
     "wowjs": "^1.1.3"
   }

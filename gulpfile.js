@@ -4,6 +4,7 @@ var gulp       = require('gulp');
 var sass       = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var webserver  = require('gulp-webserver');
+var tsc        = require('gulp-typescript');
 
 gulp.task('sass-expanded', function() {
     return gulp.src('sass/quartz.sass')
