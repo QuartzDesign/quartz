@@ -16,6 +16,10 @@ html, body {
 .centered {
   margin: 0 auto; }
 
+code {
+  padding: 15px;
+  background: #eee; }
+
 .col-lg-8 {
   width: 88%; }
 

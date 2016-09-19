@@ -1,10 +1,9 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        if($(this).scrollTop() >= 300) {
-            $('.navbar, .expo-blur-background').addClass('nse-scrolled--from--top');
-        }else {
-            $('.navbar, .expo-blur-background').removeClass('nse-scrolled--from--top');
-        }
+        var el = ".navbar, .expo-blur-background"
+        $(this).scrollTop() >= 300
+            ? $(el).addClass('nse-scrolled--from--top')
+            : $(el).removeClass('nse-scrolled--from--top');
     })
 
     $('[scroll-target]').click(function(){
@@ -18,8 +17,7 @@ $(document).ready(function() {
 
     $(window).ready(function(n) {
             if(/index.html/.test(self.location.href) || /g/.test(self.location.href)) {
-                $('.expo-icon').bind('click', function(e) {
-
+                $('.expo-icon').on('click', function(e) {
                     if($(window).offset().top == 0){
                         $(window).stop(true, true)
                         if(typeof console !== undefined) {
@@ -31,7 +29,7 @@ $(document).ready(function() {
                 })
             }
             if(!/index.html/.test(self.location.href)) {
-                $('.expo-icon').bind('click', function(e) {
+                $('.expo-icon').on('click', function(e) {
                     e.preventDefault();
                     location.href = "index.html"
                 })
