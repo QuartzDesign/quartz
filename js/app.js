@@ -16,10 +16,10 @@ $(document).ready(function() {
     })
 
     $(window).ready(function(n) {
-            if(/index.html/.test(self.location.href) || /g/.test(self.location.href)) {
+            if(/index.html/.test(self.location.href) || /#/.test(self.location.href)) {
                 $('.expo-icon').on('click', function(e) {
                     if($(window).offset().top == 0){
-                        $(window).stop(true, true)
+                        $(window).stop().clearQueue()
                         if(typeof console !== undefined) {
                             console.error("Page is scrolled to TOP! Clearing event queue and ending animation")
                         }
